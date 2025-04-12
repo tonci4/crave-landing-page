@@ -111,6 +111,7 @@
       margin-right: 6px;
     }
   </style>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
 <body>
   <h1>CRAVE<sup style="font-size: 0.65rem; position: relative; top: -1.2rem; left: 0.3rem;">®</sup></h1>
@@ -118,7 +119,7 @@
   <div class="tagline">awake · alive · amplified</div>
   <div class="teaser">An exclusive daytime rave experience blending specialty coffee, deep house, and stunning aesthetics.<br><hr style='border: none; height: 1px; background-color: #CFAE7B; width: 60%; margin: 20px auto;'> <span style="color:#CFAE7B">Are you on the list?</span>
   </div>
-  <form action="https://formspree.io/f/xnnpwzpo" method="POST">
+  <form action="https://formspree.io/f/xnnpwzpo" method="POST" onsubmit="event.preventDefault(); document.querySelector('form').style.display = 'none'; const confirmMsg = document.createElement('div'); confirmMsg.className = 'confirmation'; confirmMsg.innerText = 'Applied. You’re on the list.'; document.body.insertBefore(confirmMsg, document.querySelector('.socials')); confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });">
     <input type="email" name="email" placeholder="Get invited by email" required>
     <input type="hidden" name="_redirect" value="https://crave.hr/thank-you">
     <button type="submit">Request Invite</button>
