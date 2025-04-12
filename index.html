@@ -1,153 +1,137 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.4">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRAVE — coffee x rave</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background: linear-gradient(135deg, #fff6f0 0%, #f7f7f7 100%), url('https://www.transparenttextures.com/patterns/white-wall.png');
+      background-blend-mode: overlay;
+      background-size: cover;
+      color: #3C2A21;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+    h1 {
+      font-size: 4rem;
+      letter-spacing: 4px;
+      margin-bottom: 0.5rem;
+      color: #3C2A21;
+    }
+    h2 {
+      font-weight: 400;
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      color: #CFAE7B;
+    }
+    .tagline {
+      font-weight: 500;
+      font-size: 1rem;
+      letter-spacing: 1px;
+      color: #3C2A21;
+      margin-bottom: 2rem;
+    }
+    .teaser {
+      font-size: 1.2rem;
+      color: #2d1e17;
+      
+      max-width: 420px;
+      margin-bottom: 2rem;
+      line-height: 1.8;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 100%;
+      max-width: 300px;
+    }
+    input[type="email"] {
+      padding: 0.8rem 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    button {
+      padding: 1rem;
+      background-color: #3C2A21;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    button:hover {
+      background-color: #2d1e17;
+      transform: scale(1.05);
+    }
+    .confirmation {
+      margin-top: 1.5rem;
+      font-size: 1rem;
+      color: #2d1e17;
+      display: none;
+      animation: fadeIn 0.8s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .socials {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+    .socials a {
+      color: #3C2A21;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 10px;
+      display: inline-flex;
+      align-items: center;
+      transition: transform 0.2s ease-in-out;
+    }
+    .socials a:hover {
+      text-decoration: underline;
+      transform: scale(1.1);
+    }
+    .socials img {
+      width: 24px;
+      height: 24px;
+      margin-right: 6px;
+    }
   </style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;CRAVE — coffee x rave&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'Helvetica Neue', sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: linear-gradient(135deg, #fff6f0 0%, #f7f7f7 100%), url('https://www.transparenttextures.com/patterns/white-wall.png');</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-blend-mode: overlay;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-size: cover;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #3C2A21;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>flex-direction: column;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>min-height: 100vh;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>h1 {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 4rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>letter-spacing: 4px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 0.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #3C2A21;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>h2 {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 400;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1.2rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #CFAE7B;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.tagline {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 500;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>letter-spacing: 1px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #3C2A21;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.teaser {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1.2rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #2d1e17;</p>
-<p class="p2"><span class="Apple-converted-space">      </span></p>
-<p class="p1"><span class="Apple-converted-space">      </span>max-width: 420px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.8;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>form {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>flex-direction: column;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>gap: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>max-width: 300px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>input[type="email"] {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 0.8rem 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid #ccc;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 5px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>button {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-color: #3C2A21;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #fff;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border: none;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 5px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1.1rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-weight: bold;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>transition: all 0.3s ease-in-out;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>button:hover {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-color: #2d1e17;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>transform: scale(1.05);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.confirmation {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 1.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #2d1e17;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: none;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>animation: fadeIn 0.8s ease-in-out;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>@keyframes fadeIn {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>from { opacity: 0; }</p>
-<p class="p1"><span class="Apple-converted-space">      </span>to { opacity: 1; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.socials {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 3rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.9rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #555;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.socials a {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #3C2A21;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-decoration: none;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-weight: bold;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: 0 10px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: inline-flex;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>transition: transform 0.2s ease-in-out;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.socials a:hover {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-decoration: underline;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>transform: scale(1.1);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.socials img {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>width: 24px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>height: 24px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-right: 6px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;h1&gt;CRAVE&lt;sup style="font-size: 0.65rem; position: relative; top: -1.2rem; left: 0.3rem;"&gt;®&lt;/sup&gt;&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;h2&gt;coffee x rave&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="tagline"&gt;awake · alive · amplified&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="teaser"&gt;An exclusive daytime rave experience blending specialty coffee, deep house, and stunning aesthetics.&lt;br&gt;&lt;hr style='border: none; height: 1px; background-color: #CFAE7B; width: 60%; margin: 20px auto;'&gt; &lt;span style="color:#CFAE7B"&gt;Are you on the list?&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;form onsubmit="event.preventDefault(); document.querySelector('.confirmation').style.display = 'block';"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;input type="email" placeholder="Get invited by email" required&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;button type="submit"&gt;Request Invite&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/form&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="confirmation"&gt;Thank you! You’re officially on the list. We’ll be in touch.&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="socials"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>Follow us for more:</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;br&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="https://www.instagram.com/crave.hr?igsh=MXdhMHVteHRxeDBpag%3D%3D&amp;utm_source=qr" target="_blank"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram"&gt;Instagram</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="#" target="_blank"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok"&gt;TikTok</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+  <h1>CRAVE<sup style="font-size: 0.65rem; position: relative; top: -1.2rem; left: 0.3rem;">®</sup></h1>
+  <h2>coffee x rave</h2>
+  <div class="tagline">awake · alive · amplified</div>
+  <div class="teaser">An exclusive daytime rave experience blending specialty coffee, deep house, and stunning aesthetics.<br><hr style='border: none; height: 1px; background-color: #CFAE7B; width: 60%; margin: 20px auto;'> <span style="color:#CFAE7B">Are you on the list?</span>
+  </div>
+  <form onsubmit="event.preventDefault(); document.querySelector('.confirmation').style.display = 'block';">
+    <input type="email" placeholder="Get invited by email" required>
+    <button type="submit">Request Invite</button>
+  </form>
+  <div class="confirmation">Thank you! You’re officially on the list. We’ll be in touch.</div>
+  <div class="socials">
+    Follow us for more:
+    <br>
+    <a href="https://www.instagram.com/crave.hr?igsh=MXdhMHVteHRxeDBpag%3D%3D&utm_source=qr" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">Instagram
+    </a>
+    <a href="#" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok">TikTok
+    </a>
+  </div>
 </body>
 </html>
