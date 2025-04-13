@@ -3,137 +3,102 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CRAVE — coffee x rave</title>
+  <title>CRAVE® — coffee x rave</title>
   <style>
-    body {
+    :root {
+      --bg: #ffffff;
+      --text: #000000;
+      --accent: #CFAE7B;
+      --font: 'Helvetica Neue', sans-serif;
+    }
+    * {
       margin: 0;
       padding: 0;
-      font-family: 'Helvetica Neue', sans-serif;
-      background: linear-gradient(135deg, #fff6f0 0%, #f7f7f7 100%), url('https://www.transparenttextures.com/patterns/white-wall.png');
-      background-blend-mode: overlay;
-      background-size: cover;
-      color: #3C2A21;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       min-height: 100vh;
       text-align: center;
+      padding: 2rem;
     }
     h1 {
-      font-size: 4rem;
-      letter-spacing: 4px;
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: 3px;
       margin-bottom: 0.5rem;
-      color: #3C2A21;
     }
     h2 {
+      font-size: 1.2rem;
       font-weight: 400;
-      font-size: 1.2rem;
       margin-bottom: 2rem;
-      color: #CFAE7B;
+      color: var(--accent);
     }
-    .tagline {
-      font-weight: 500;
-      font-size: 1rem;
-      letter-spacing: 1px;
-      color: #3C2A21;
-      margin-bottom: 2rem;
-    }
-    .teaser {
-      font-size: 1.2rem;
-      color: #2d1e17;
-      
-      max-width: 420px;
-      margin-bottom: 2rem;
-      line-height: 1.8;
+    p.teaser {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      max-width: 500px;
+      margin-bottom: 2.5rem;
     }
     form {
       display: flex;
       flex-direction: column;
       gap: 1rem;
+      max-width: 400px;
       width: 100%;
-      max-width: 300px;
     }
     input[type="email"] {
-      padding: 0.8rem 1rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
+      padding: 1rem;
+      border: 1px solid #000;
+      border-radius: 0;
       font-size: 1rem;
     }
     button {
       padding: 1rem;
-      background-color: #3C2A21;
-      color: #fff;
+      background-color: var(--text);
+      color: var(--bg);
       border: none;
-      border-radius: 5px;
-      font-size: 1.1rem;
+      font-size: 1rem;
       font-weight: bold;
+      text-transform: uppercase;
       cursor: pointer;
-      transition: all 0.3s ease-in-out;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
     }
     button:hover {
-      background-color: #2d1e17;
-      transform: scale(1.05);
+      background-color: var(--accent);
+      color: var(--text);
     }
     .confirmation {
-      margin-top: 1.5rem;
+      margin-top: 2rem;
       font-size: 1rem;
-      color: #2d1e17;
-      display: none;
-      animation: fadeIn 0.8s ease-in-out;
     }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    .socials {
-      margin-top: 3rem;
-      font-size: 0.9rem;
-      color: #555;
-    }
-    .socials a {
-      color: #3C2A21;
-      text-decoration: none;
-      font-weight: bold;
-      margin: 0 10px;
-      display: inline-flex;
-      align-items: center;
-      transition: transform 0.2s ease-in-out;
-    }
-    .socials a:hover {
-      text-decoration: underline;
-      transform: scale(1.1);
-    }
-    .socials img {
-      width: 24px;
-      height: 24px;
-      margin-right: 6px;
+    footer {
+      margin-top: 4rem;
+      font-size: 0.85rem;
+      color: #666;
     }
   </style>
-<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
 <body>
-  <h1>CRAVE<sup style="font-size: 0.65rem; position: relative; top: -1.2rem; left: 0.3rem;">®</sup></h1>
+  <h1>CRAVE<sup style="font-size: 0.6rem; vertical-align: top;">®</sup></h1>
   <h2>coffee x rave</h2>
-  <div class="tagline">awake · alive · amplified</div>
-  <div class="teaser">An exclusive daytime rave experience blending specialty coffee, deep house, and stunning aesthetics.<br><hr style='border: none; height: 1px; background-color: #CFAE7B; width: 60%; margin: 20px auto;'> <span style="color:#CFAE7B">You are on the list!</span>
-  </div>
-  <form action="https://formspree.io/f/xnnpwzpo" method="POST" onsubmit="event.preventDefault(); document.querySelector('form').style.display = 'none'; const confirmMsg = document.createElement('div'); confirmMsg.className = 'confirmation'; confirmMsg.innerText = 'Applied. You’re on the list.'; document.body.insertBefore(confirmMsg, document.querySelector('.socials')); confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });">
-    <input type="email" name="email" placeholder="Get invited by email" required>
+  <p class="teaser">Crave isn't just a party — it's a ritual. Where the buzz of specialty coffee meets the pulse of deep house. A new kind of morning. Coming soon to Croatia.</p>
+
+  <form action="https://formspree.io/f/xnnpwzpo" method="POST" onsubmit="event.preventDefault(); this.style.display='none'; const msg=document.createElement('div'); msg.className='confirmation'; msg.innerText='Applied. You’re on the list.'; document.body.appendChild(msg); confetti({ particleCount: 100, spread: 60, origin: { y: 0.6 } });">
+    <input type="email" name="email" placeholder="Enter your email" required>
     <input type="hidden" name="_redirect" value="https://crave.hr/thank-you">
-    <button type="submit">Request Invite</button>
+    <button type="submit">Get Invited</button>
   </form>
-  
-  <div class="socials">
-    Follow us for more:
-    <br>
-    <a href="https://www.instagram.com/crave.hr?igsh=MXdhMHVteHRxeDBpag%3D%3D&utm_source=qr" target="_blank">
-      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">Instagram
-    </a>
-    <a href="#" target="_blank">
-      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok">TikTok
-    </a>
-  </div>
+
+  <footer>
+    Follow us on <a href="https://www.instagram.com/crave.hr" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" style="width:16px;height:16px;margin-right:6px;vertical-align:middle;">Instagram</a>
+  </footer>
 </body>
 </html>
